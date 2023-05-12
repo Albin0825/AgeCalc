@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --clr-base: #121212;
+    --clr-second: #1d1d1d;
+
+    --clr-text: #e8e8e8;
+}
+
+*,
+*::before,
+*::after {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    grid-gap: 1rem;
+    background-color: var(--clr-base);
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+
+
+/*==================================================
+H2 / INPUT
+==================================================*/
+h2,
+input {
+    color: var(--clr-text);
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+input {
+    flex-basis: 100%;
+    background: inherit;
+    width: 0;
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--clr-second);
+}
